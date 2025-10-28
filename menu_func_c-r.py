@@ -105,8 +105,8 @@ class Menu:
 
     def draw_notification(self):
         if self.notification:
-            txt = self.NOTIFY_FONT.render(self.notification, True, (0, 100, 0))
-            txt_rect = txt.get_rect(center=(self.WIDTH // 2, 400))
+            txt = self.NOTIFY_FONT.render(self.notification, True, (0, 0, 0))
+            txt_rect = txt.get_rect(center=(self.WIDTH // 2, 20))
             self.screen.blit(txt, txt_rect)
 
     def run(self):
